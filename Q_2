@@ -1,0 +1,15 @@
+/*Get a number fromthe user, subtract 5 from that number, and print the result */
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    a-=5;
+    b-=5;
+    printf("%d\n",a);
+    printf("%d",b);
+
+    return 0;
+}
