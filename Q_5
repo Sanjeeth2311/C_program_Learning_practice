@@ -1,0 +1,15 @@
+Get a number from the user, divide the number by 8, and print the remainder.
+----------------------------------
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    a%=8;
+    b%=8;
+    printf("%d\n",a);
+    printf("%d",b);
+
+    return 0;
+}
