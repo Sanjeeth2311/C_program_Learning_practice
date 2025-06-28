@@ -1,0 +1,18 @@
+Get a two-digit number fromthr user, make the ten'sdigit 1, and then print it.
+
+______________________________________
+
+#include <stdio.h>
+
+int main() {
+     int a,d,e;
+    scanf("%d",&a);
+
+    d=(a/10)%10;
+    e=(a%10);
+    
+    int x=1*10 + e;
+    printf("%d",x);
+
+    return 0;
+}
