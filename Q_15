@@ -1,0 +1,18 @@
+Get a two-digit number from the user, make the one's digit 0, then print it.
+
+_______________________________________________
+
+#include <stdio.h>
+
+int main() {
+     int a,b,c,d,e;
+    scanf("%d",&a);
+
+    d=(a/10)%10;
+    e=(a%10);
+    
+    int x=d*10;
+    printf("%d",x);
+
+    return 0;
+}
