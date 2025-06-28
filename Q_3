@@ -1,0 +1,15 @@
+/* gte a number from the user, multiply 3by that number, and print the result */
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    a*=3;
+    b*=3;
+    printf("%d\n",a);
+    printf("%d",b);
+
+    return 0;
+}
