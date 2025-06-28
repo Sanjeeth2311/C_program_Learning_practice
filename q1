@@ -1,11 +1,16 @@
+/* get a number from the user, add 2 to that number, and print th etesult*/
+
+
 #include <stdio.h>
 
 int main() {
-    int x,y;
-    printf("Enter a number:");
-    scanf("%d",&x);
-    y = x;
-    printf("Result = %d", y);
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    a+=2;
+    b+=2;
+    printf("%d\n",a);
+    printf("%d",b);
 
     return 0;
 }
