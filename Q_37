@@ -1,0 +1,23 @@
+Get a four-digit number from user and check if the first 2 digits and last 2 digits are the same. If yes, print 1; oterwise, print 0.
+
+_______________________________________
+
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d,x,y;
+    scanf("%d",&a);
+    x=a/1000;
+    y=a/100;
+    y%=10;
+    b=a%10;
+    c=a/10;
+    c%=10;
+   
+    int m = (x*10)+y;
+    int n = (c*10)+b;
+    d=(m==n);
+    
+    printf("%d",d);
+    return 0;
+}
