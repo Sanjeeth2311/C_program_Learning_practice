@@ -1,0 +1,27 @@
+Get a three-digit number from user. if the sum of the digits is less then 10, then print the sum, otherwise add the difits of the sum. if the sum of the digits is less then 10, then print the sum, oterwise add the digits of the sum, and print the sum.
+Note: The result should always be a single digit only.
+
+____________________________________________________
+
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d",&a);
+    int a1 = a%10;
+    b=a/10;
+    b%=10;
+    int d = a/100;
+    c=a1+b+d;
+    if(c<10){
+        printf("%d",c);
+    }
+    else{
+        int x = c%10;
+        int y = c/10;
+        int z = x+y;
+        printf("%d",z);
+    }
+
+    return 0;
+}
