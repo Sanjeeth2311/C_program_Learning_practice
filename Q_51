@@ -1,0 +1,21 @@
+Get a four-digit number from the user and chech if the first 2 digits and last 2 digits are the same. If yes, the print "Success", otherwise print "Failure".
+
+____________________________________________
+
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d;
+    scanf("%d",&a);
+    b=a/1000;
+    c=a/100;
+    c%=10;
+    if(b==c){ 
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+    
+    return 0;
+}
