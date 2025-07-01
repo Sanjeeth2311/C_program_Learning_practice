@@ -1,0 +1,28 @@
+Write a loop program to print sum of 6 to 1.
+
+_________________________________
+
+#include <stdio.h>
+
+int main() {
+	int a = 6;
+	int b = 0;
+	int x = 1;
+loop:
+	if(x<=a)
+	{
+        b+=x;
+		x++;
+		goto loop;
+		
+	}
+        printf("%d\n",b);
+	return 0;
+}
+
+
+____________________________________
+
+Sample Output:
+
+21
