@@ -1,4 +1,4 @@
-Get a number from the user and chech if the digit 0 and digit 1 are identical. If yes, the print "Success", otherwise print "Failure".
+Get a two-digit number from the user and chech if the digit 0 and digit 1 are identical. If yes, the print "Success", otherwise print "Failure".
 
 ____________________________________________
 
