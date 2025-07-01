@@ -1,0 +1,21 @@
+Get a four-digit number from the user and chech if the digit 1 and digit 0 are the same and if digit 1 and digit 0 are different. If yes, the print "Success", otherwise print "Failure".
+
+____________________________________________
+
+#include <stdio.h>
+
+int main() {
+    int a,b,c,d;
+    scanf("%d",&a);
+    b=a%10;
+    c=a/10;
+    c%=10;
+    if(b==c){ 
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+    
+    return 0;
+}
