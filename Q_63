@@ -1,0 +1,33 @@
+Write a program to get a number from user and print the reverse of the that number.
+
+__________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,x;
+    scanf("%d",&a);
+    x=0;
+    loop:
+    if(a != 0){
+        b = a%10;
+        x = x*10+b;
+        a/=10;
+
+        goto loop;
+    }
+    printf("%d",x);
+    return 0;
+}
+
+
+____________________________________
+
+input:
+
+654321
+
+Output:
+
+123456
