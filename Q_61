@@ -1,0 +1,31 @@
+Write a program to get a number from user print the total number of digits in number.
+
+__________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    b=0;
+    loop:
+    if(a != 0){
+        a/=10;
+        b++;
+        goto loop;
+    }
+    printf("%d",b);
+    return 0;
+}
+
+
+____________________________________
+
+input:
+
+213456
+
+Output:
+
+6
