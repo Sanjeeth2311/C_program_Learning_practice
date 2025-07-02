@@ -1,0 +1,32 @@
+Write a program to get a number from user and print the sum of all digits.
+
+__________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    scanf("%d",&a);
+    c=0;
+    loop:
+    if(a != 0){
+        b = a%10;
+        a/=10;
+        
+        c += b;
+        goto loop;
+    }
+    printf("%d",c);
+    return 0;
+}
+
+____________________________________
+
+input:
+
+654321
+
+Output:
+
+21
