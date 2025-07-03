@@ -1,0 +1,46 @@
+Write a program to get a number from user and print the first and last digits and print the result.
+
+__________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,x,y;
+    scanf("%d",&a);
+    x=a%10;
+    b=0;
+    c=1;
+    int z = a;
+    loop:
+    if(z != 0){
+        z/=10;
+        c=c*10;
+        b++;
+        goto loop;
+    }
+    int last = z;
+    b++;
+    
+    y=(a%c)/10;
+    
+    d=x;
+    
+    for(int i=1; i < c-1; i++){
+        d=d*10;
+ 
+    }
+    int l =d+y*10+x;
+    printf("%d",l);
+    
+    return 0;
+}
+
+
+____________________________________
+
+input:
+
+123456
+
+Output:
