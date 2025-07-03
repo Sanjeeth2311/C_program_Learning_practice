@@ -1,0 +1,38 @@
+Write a program get number from user print whether that number is prime or not.
+
+____________________________
+
+#include<stdio.h>
+
+int main(){
+    int a,b,c=0;
+    scanf("%d",&a);
+    
+    if(a <= 1){
+        printf("Not prime\n");
+        return 0;
+    }
+    for(int i=2; i<a; i++){
+        if(a %i==0){
+            c=1;
+            break;
+        }
+    }
+    if(c ==0){
+        printf("Prime\n");
+    }
+    else{
+        printf("Not prime\n");
+    }
+    return 0;
+}
+
+___________________________________
+
+input:
+31
+33
+
+Output:
+Prime
+Not prime
