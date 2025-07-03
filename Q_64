@@ -4,38 +4,40 @@ __________________________________
 
 #include <stdio.h>
 
-int main()
-{
-    int a,b,c,d,x,y;
-    scanf("%d",&a);
-    x=a%10;
-    b=0;
-    c=1;
-    int z = a;
-    loop:
-    if(z != 0){
-        z/=10;
-        c=c*10;
-        b++;
-        goto loop;
+int main() {
+    int a, n, first, last, temp, count = 0, pow10 = 1, mid;
+
+    scanf("%d", &a);
+    n = a;         
+    last = a % 10; 
+
+    
+    temp = a;
+    loop1:
+    if (temp > 0) {
+        temp = temp / 10;
+        count++;
+        pow10 = pow10 * 10;
+        goto loop1;
     }
-    int last = z;
-    b++;
+
+    pow10 = pow10 / 10;
+
     
-    y=(a%c)/10;
-    
-    d=x;
-    
-    for(int i=1; i < c-1; i++){
-        d=d*10;
- 
-    }
-    int l =d+y*10+x;
-    printf("%d",l);
-    
+    first = a / pow10;
+
+
+    a = a % pow10;     
+    a = a / 10;        
+    mid = a;
+
+   
+    printf("%d", last);  
+    printf("%d", mid);   
+    printf("%d", first); 
+
     return 0;
 }
-
 
 ____________________________________
 
@@ -44,3 +46,5 @@ input:
 123456
 
 Output:
+
+623451
