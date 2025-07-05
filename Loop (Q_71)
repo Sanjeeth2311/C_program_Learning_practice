@@ -1,0 +1,26 @@
+71). Write a loop program to prrint odd number between 1 to 9.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 0;
+    for(int i = 0; i<10; i++){
+        if(i%2){
+        printf("%d\n", i);
+        }
+    }
+     
+    return 0;
+}
+_________________________________________
+
+Output:
+
+1
+3
+5
+7
+9
