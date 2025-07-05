@@ -1,0 +1,27 @@
+77). Write a loop program to prrint from user print the total number of digits in that number.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b=0,c=0;
+    scanf("%d",&a);
+    b=a;
+    loop: if(b>0){
+        b/=10;
+        c++;
+        goto loop;
+    }
+    printf("%d\n", c);
+     
+    return 0;
+}
+_________________________________________
+
+Input:
+123456
+
+Output:
+6
