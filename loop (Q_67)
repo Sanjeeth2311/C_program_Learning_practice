@@ -1,0 +1,23 @@
+67). Write a loop program to prrint 1 to 5 on one by one.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    for(int i = 0; i<5; printf("%d\n", i)){
+        i++;
+    }
+    
+    return 0;
+}
+
+_________________________________________
+
+Output:
+1
+2
+3
+4
+5
