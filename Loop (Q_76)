@@ -1,0 +1,29 @@
+76). Write a loop program to prrint the sum of two-digit odd numbers, whose ten's digit is 7.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d=0,e;
+    for(int i = 10; i<100; i++){
+            if(i%2){
+                a=i%10;
+                b=i/10;
+                c=b%10;
+                e=a+c;
+                if(c==7){
+                    d+=i;
+                }
+            }
+        }
+    printf("%d\n", d);
+     
+    return 0;
+}
+_________________________________________
+
+Output:
+
+375
