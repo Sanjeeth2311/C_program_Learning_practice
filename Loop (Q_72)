@@ -1,0 +1,25 @@
+72). Write a loop program to prrint two-digit odd numbers. below 20.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    for(int i = 10; i<21; i++){
+        if(i%2){
+            printf("%d\n", i);
+        }
+    }
+     
+    return 0;
+}
+_________________________________________
+
+Output:
+
+11
+13
+15
+17
+19
