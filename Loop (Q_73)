@@ -1,0 +1,28 @@
+73). Write a loop program to prrint the two-digit odd number, who's sum of digits are 7.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    for(int i = 10; i<100; i++){
+        if(i%2){
+            a=i%10;
+            b=i/10;
+            c=a+b;
+            if(c==7)
+            printf("%d\n", i);
+        }
+    }
+     
+    return 0;
+}
+_________________________________________
+
+Output:
+
+25
+43
+61
