@@ -1,0 +1,23 @@
+75). Write a loop program to prrint the two-digit numbers whose one's digit is 5.
+
+____________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,d=0;
+    for(int i = 10; i<100; i++){
+            a=i%10;
+            if(a==5)
+                d+=i;
+        }
+    printf("%d\n", d);
+     
+    return 0;
+}
+_________________________________________
+
+Output:
+
+495
