@@ -1,0 +1,37 @@
+81) Write a program to get a number from user and if the last digit of the number is even print the same number. If the last digit of the number is odd, then subtract 1 from the last digit and print the number. (Note: Last digit - MSB).
+
+____________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,x=1;
+    int mid,first;
+    
+    scanf("%d",&a);
+    
+    int temp = a;
+    
+    while(temp>=10){
+        temp/=10;
+        x*=10;
+    }
+    first = temp;
+    
+    if(first%2){
+        a=a-(first*x)+((first-1)*x);
+    }
+    
+    printf("%d",a);
+
+    return 0;
+}
+
+_______________________________________________
+
+Input:
+775
+
+Output:
+675
