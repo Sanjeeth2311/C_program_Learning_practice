@@ -1,0 +1,40 @@
+80) Write a program to get a number from user and interchange the first and last digits print the result.
+
+____________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c=0,d,x=1;
+    int first,mid,last;
+    
+    scanf("%d",&a);
+    first=a%10;
+    int temp = a;
+    while(temp>0){
+        last=temp%10;
+        temp/=10;
+        c++;
+    }
+    for(int i =1; i<c; i++){
+        x=x*10;
+    }
+    b=a/10;
+    
+    mid=b%(x/10);
+    
+    int res = (first*x) + mid*10 + last;
+    
+    printf("%d",res);
+
+    return 0;
+}
+
+_______________________________________________
+
+Input:
+123456
+
+Output:
+623451
