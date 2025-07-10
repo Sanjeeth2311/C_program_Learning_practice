@@ -1,0 +1,39 @@
+82) Write a program to get a number from user, print whether that numberis prime, and sum of digit is equal to 14.
+
+____________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,x=1;
+    int mid,first;
+    
+    scanf("%d",&a);
+    
+    int temp = a;
+    
+    while(temp>=10){
+        temp/=10;
+        x*=10;
+    }
+    first = temp;
+    
+    if(first%2){
+        a=a-(first*x)+((first-1)*x);
+    }
+    
+    printf("%d",a);
+
+    return 0;
+}
+
+_______________________________________________
+
+Input:
+31
+77
+
+Output:
+Prime
+Not Prime
