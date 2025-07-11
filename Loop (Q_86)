@@ -1,0 +1,33 @@
+86) Write a program to get number from user print the total number digits which are odd in the number.
+
+___________________________________________
+
+84) Write a program to get nuber from user, print whether that number's middle two digits ( hundred's digits and ten's digit ) is prime.
+
+___________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b=0,c=0;
+    scanf("%d",&a);
+    for(int i=0;a>0;i++){
+      if((a%10)%2!=0){
+          b++;
+      }
+      a=a/10;
+      }
+   printf("%d",b);
+    return 0;
+}
+
+________________________________________________
+
+Input:
+12345678
+9875321
+
+Output:
+4
+5
