@@ -3,31 +3,33 @@
 ____________________________________________
 
 #include <stdio.h>
-
-int main()
-{
-    int a,x=1;
-    int mid,first;
-    
-    scanf("%d",&a);
-    
-    int temp = a;
-    
-    while(temp>=10){
-        temp/=10;
-        x*=10;
-    }
-    first = temp;
-    
-    if(first%2){
-        a=a-(first*x)+((first-1)*x);
-    }
-    
-    printf("%d",a);
-
-    return 0;
+int main(){
+	int a,b=0,c,x,y;
+	scanf("%d",&a);
+	for(int i=2; i<=a; i++){
+	if(a%i==0){
+	b++;
+	c=a;
+	}}
+	x=c%10;
+	y=c/10;
+	int z = x+y;
+	if(b==1){
+	
+	if(z==14){
+	printf("Prime & sum of digits is 14");
+	}
+	else{
+	printf("Prime but sum of digits is not 14");
+	}
+	}
+	else if(z==14){
+	printf("Not Prime but sum of digit is 14");
+	}
+	else{
+	printf("Not prime but sum of digit is not 14");
+	}
 }
-
 _______________________________________________
 
 Input:
@@ -35,5 +37,5 @@ Input:
 77
 
 Output:
-Prime
-Not Prime
+Prime but sum of digits is not 14
+Not Prime but sum of digit is 14
