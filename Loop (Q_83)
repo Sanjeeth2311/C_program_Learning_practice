@@ -1,0 +1,35 @@
+830 Write a program to get nuber  from user, print whether that number's first two digits ( ten's digits and one's digit ) is prime.
+
+___________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b=0,c;
+    scanf("%d",&a);
+    c=a%100;
+    for(int i=2; i<=c; i++){
+        if(c%i==0){
+            b++;
+        }
+    }
+    if(b==1){
+        printf("Prime");
+    }
+    else{
+        printf("Not Prime");
+    }
+
+    return 0;
+}
+
+________________________________________________
+
+Input:
+359
+3577
+
+Output:
+Prime
+Not prime
