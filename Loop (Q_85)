@@ -1,0 +1,28 @@
+85) Write a program to get number of single digit Prime numbers.
+
+___________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c=0;
+    for(a=2; a<10; a++){
+        b=0;
+    for(int i=2; i<=a; i++){
+        if(a%i==0){
+            b++;
+        }
+    }
+    if(b==1){
+        c++;
+    }
+    }
+    printf("%d",c);
+
+    return 0;
+}
+________________________________________________
+
+Output:
+4
