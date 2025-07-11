@@ -2,10 +2,6 @@
 
 ___________________________________________
 
-84) Write a program to get nuber from user, print whether that number's middle two digits ( hundred's digits and ten's digit ) is prime.
-
-___________________________________________
-
 #include <stdio.h>
 
 int main()
