@@ -1,0 +1,32 @@
+88) Write a program get number from user print the total number of single-digit perfect square numbers in the number.
+
+_________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c=0;
+    scanf("%d",&a);
+    
+    for(a; a>0; a/=10){
+        b = a%10;
+        if(b == 1 || b == 4 || b == 9 ){
+            c++;
+        }
+    }
+    
+    printf("%d",c);
+
+    return 0;
+}
+
+____________________________________________
+
+Input: 
+123456789
+987531
+
+Output:
+3
+2
