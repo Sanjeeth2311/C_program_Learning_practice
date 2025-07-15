@@ -1,0 +1,19 @@
+98) Write a loop program to print sum of 1 to 5.
+
+__________________________________
+
+#include <stdio.h>
+
+int main(){
+    int a=1,b=0;
+    while(a<6){
+        b+=a;
+        a++;
+    }
+    printf("%d\n",b);
+}
+
+___________________________________
+
+Output:
+15
