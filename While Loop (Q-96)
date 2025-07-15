@@ -1,0 +1,22 @@
+96) Write a loop program to print 1 to 5 on one by one.
+
+__________________________________
+
+#include <stdio.h>
+
+int main(){
+    int a=1;
+    while(a<6){
+        printf("%d\n",a);
+        a++;
+    }
+}
+
+___________________________________
+
+Output:
+1
+2
+3
+4
+5
