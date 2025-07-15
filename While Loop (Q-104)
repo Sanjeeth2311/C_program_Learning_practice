@@ -1,0 +1,28 @@
+104) Write a loop program to print the two-digit even numbers, who's sum of digits are 6.
+
+__________________________________
+
+#include <stdio.h>
+
+int main(){
+    int a=10,b,c,d;
+    while(a<100){
+        if(a%2==0){
+            b=a%10;
+            c=a/10;
+            d=b+c;
+            if(d == 6 ){
+                printf("%d\n",a);
+            }
+        
+        }
+        a++;
+    }
+}
+
+___________________________________
+
+Output:
+24
+42
+60
