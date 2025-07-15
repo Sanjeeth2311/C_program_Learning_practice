@@ -1,0 +1,26 @@
+107) Write a program to get a number from user print the total number of digits in that number.
+
+____________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b=0;
+    scanf("%d",&a);
+    while(a>0){
+        b++;
+        a/=10;
+    }
+    printf("%d",b);
+
+    return 0;
+}
+
+______________________________________
+
+Input:
+123456
+
+Output:
+6
