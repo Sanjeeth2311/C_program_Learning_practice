@@ -5,32 +5,22 @@ ________________________________________
 
 int main()
 {
-    int a,i=2,y=0;
-    scanf("%d",&a);
-    a%=10;
-    a%=100;
+    int a=10,b=1,i=2;
     while(i<=a){
         if(a%i==0){
-            y++;
+            b++;
+            i++;
         }
+        else{
         i++;
+        }
     }
-    if(y==1){
-        printf("Prime\n");
-    }
-    else{
-        printf("Not Prime");
-    }
+    printf("%d",b);
 
     return 0;
 }
 
 ________________________________________
 
-Input:
-6359
-3537
-
 Output:
-Not Prime
-Prime
+4
