@@ -1,0 +1,36 @@
+119) Write a program grt number from user print the total number of two-digit odd in the number.
+
+________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c=0;
+    scanf("%d",&a);
+    b=a;
+    while(b>9){
+        a=b%100;
+        if(a%2){
+            b/=10;
+            c++;
+        }
+        else{
+            b/=10;
+        }
+    }
+        
+    printf("%d",c);
+
+    return 0;
+}
+
+________________________________________
+
+Input:
+12345678
+987531
+
+Output:
+3
+4
