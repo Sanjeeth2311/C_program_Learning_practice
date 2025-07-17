@@ -1,0 +1,32 @@
+122) Write a program get number from user print the total number of single-digit prime numbers in the number.
+
+________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c=0,i=1,x;
+    scanf("%d",&a);
+    b=a;
+    while(b>0){
+        a=b%10;
+        if(a==2||a==3||a==5||a==7){
+            c++;
+        }
+            b/=10;
+    }
+        
+    printf("%d",c);
+
+    return 0;
+}
+________________________________________
+
+Input:
+163496481
+364925
+
+Output:
+1
+3
