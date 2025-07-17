@@ -1,0 +1,33 @@
+121) Write a program get number from user print the total number of two-digit perfect square in the number.
+
+________________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c=0,i=1,x;
+    scanf("%d",&a);
+    b=a;
+    while(b>0){
+        a=b%100;
+        if(a==16||a==25||a==36||a==49||a==64||a==81){
+            c++;
+        }
+            b/=10;
+    }
+        
+    printf("%d",c);
+
+    return 0;
+}
+
+________________________________________
+
+Input:
+163496481
+364925
+
+Output:
+4
+4
