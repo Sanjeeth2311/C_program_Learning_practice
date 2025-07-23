@@ -1,0 +1,33 @@
+125) Write a program to get two numbers from user and print the LCM of those numbers.
+___________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    
+    int lcm = (a>b)?a:b;
+    
+    int c=lcm;
+    while(1){
+        if(c%a==0&&c%b==0){
+            printf("%d",c);
+            break;
+        }
+    c++;
+    }
+
+    return 0;
+}
+
+________________________________________
+
+Input:
+7
+9
+
+Output:
+63
