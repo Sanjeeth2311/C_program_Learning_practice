@@ -1,0 +1,37 @@
+126) Write a program to get three numbers from user and print the LCM of those numbers.
+
+___________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    
+    int lcm = (a>b)?((a>c)?a:c):((b>c)?b:c);
+    
+    int d=lcm;
+    
+    while(1){
+        if(d%a==0&&d%b==0&&d%c==0){
+            printf("%d",d);
+            break;
+        }
+    d++;
+    }
+
+    return 0;
+}
+
+________________________________________
+
+Input: 
+6
+9
+12
+
+Output:
+36
