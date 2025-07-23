@@ -1,0 +1,36 @@
+127) Write a program to get two numbers from user and print the HCF of those numbers.
+
+___________________________________
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,x;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    
+    int lcm = (a>b)?a:b;
+    
+    int c=lcm;
+    
+    int i =1;
+    while(i<c){
+        if(a%i==0&&b%i==0){
+            x = i;
+        }
+    i++;
+    }
+    printf("%d",x);
+    return 0;
+}
+
+___________________________________
+
+Input:
+6 18
+13 16
+
+Output:
+6
+1
