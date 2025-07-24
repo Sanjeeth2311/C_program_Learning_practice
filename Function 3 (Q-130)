@@ -1,0 +1,23 @@
+130) Write a loop program to print sumof 1 to 5.
+Function Name : disp_assend
+
+____________________________________
+
+#include <stdio.h>
+void disp_assend(int a,int b);
+int main()
+{
+    int x=5,b=0;
+    disp_assend(x,b);
+}
+void disp_assend(int a,int b){
+    for(int i=1; i<=a; i++){
+        b+=i;
+    }
+    printf("%d\n",b);
+}
+
+______________________________________
+
+Output:
+15
