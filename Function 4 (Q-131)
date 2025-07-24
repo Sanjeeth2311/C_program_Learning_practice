@@ -1,0 +1,23 @@
+131) Write a loop program to print sum of 6 to 1.
+Function Name : disp_assend
+
+____________________________________
+
+#include <stdio.h>
+void disp_assend(int a,int b);
+int main()
+{
+    int x=6,b=0;
+    disp_assend(x,b);
+}
+void disp_assend(int a,int b){
+    for(int i=1; i<=a; i++){
+        b+=i;
+    }
+    printf("%d\n",b);
+}
+
+______________________________________
+
+Output:
+21
