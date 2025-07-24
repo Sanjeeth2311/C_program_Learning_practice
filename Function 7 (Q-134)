@@ -1,5 +1,5 @@
 134) Write a loop program to print the two-digit odd number, below 20.
-Function Name : disp_2digit_odd_sum
+Function Name : disp_2digit_odd_sum7
 
 ____________________________________
 
@@ -8,9 +8,9 @@ void disp_2digit_odd_sun7(int a);
 int main()
 {
     int y=99;
-    disp_2digit_odd_below20(y);
+    disp_2digit_odd_sum7(y);
 }
-void disp_2digit_odd_below20(int a){
+void disp_2digit_odd_sum7(int a){
     for(int i=10; i<=a; i++){
         if(i%2){
             int l=i%10;
