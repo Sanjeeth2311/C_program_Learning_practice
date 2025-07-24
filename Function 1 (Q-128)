@@ -1,0 +1,26 @@
+128) Write a loop program to print 1 to 5 on one by one.
+Function Name : disp_assend
+
+____________________________________
+
+#include <stdio.h>
+void disp_assend(int a);
+int main()
+{
+    int x=5;
+    disp_assend(x);
+}
+void disp_assend(int a){
+    for(int i=1; i<=a; i++){
+        printf("%d\n",i);
+    }
+}
+
+______________________________________
+
+Output:
+1
+2
+3
+4
+5
